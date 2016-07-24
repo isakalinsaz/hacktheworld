@@ -1,7 +1,5 @@
 package com.example.sorting.algorithm;
 
-import java.util.HashMap;
-
 public class ObjectPassByValue {
 
 	private String name;
