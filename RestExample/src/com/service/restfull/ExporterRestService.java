@@ -22,7 +22,7 @@ public class ExporterRestService {
 	ExportService exportServiceImpl;
 
 	@GET
-	public Response convertCtoF() {
+	public Response getResponse() {
 
 		String result = exportServiceImpl.makeRequest();
 		return Response.status(200).entity(result).build();
@@ -30,9 +30,9 @@ public class ExporterRestService {
 
 	
 	@GET
-	@Path("{value}")
+	@Path(value="{value}")
 	@Produces("application/json")
-	public String convertCtoFfromInput(@PathParam("value") Integer param) throws JsonProcessingException {
+	public String generateJsonValue(@PathParam("value") Integer param) throws JsonProcessingException {
 
 		RestObject jsonObject = new RestObject();
 		jsonObject.setId(param);

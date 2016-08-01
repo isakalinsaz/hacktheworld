@@ -1,5 +1,8 @@
 package com.service.model;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class RestObject {
 	private int id;
 	private String value;
