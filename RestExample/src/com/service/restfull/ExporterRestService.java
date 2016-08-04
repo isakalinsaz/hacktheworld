@@ -6,41 +6,31 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.service.controller.ExportService;
+import com.service.controller.ExportServiceImpl;
 import com.service.model.RestObject;
 
-@Component
 @Path(value = "/exporter")
 public class ExporterRestService {
 
-	@Autowired
-	ExportService exportServiceImpl;
+	ExportServiceImpl exportServiceImpl = new ExportServiceImpl();
 
 	@GET
+	@Path("/{password}/{}")
 	public Response getResponse() {
 
 		String result = exportServiceImpl.makeRequest();
 		return Response.status(200).entity(result).build();
 	}
 
-	
 	@GET
-	@Path(value="{value}")
+	@Path(value = "{value}")
 	@Produces("application/json")
-	public String generateJsonValue(@PathParam("value") Integer param) throws JsonProcessingException {
+	public String generateJsonValue(@PathParam("value") Integer param) {
 
 		RestObject jsonObject = new RestObject();
 		jsonObject.setId(param);
 		jsonObject.setValue(String.valueOf(Math.random()));
 
-		ObjectMapper mapper = new ObjectMapper();
-		String prettyObject = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonObject);
-		System.out.println(prettyObject);
-		return prettyObject;
+		return jsonObject.toString();
 	}
 }
