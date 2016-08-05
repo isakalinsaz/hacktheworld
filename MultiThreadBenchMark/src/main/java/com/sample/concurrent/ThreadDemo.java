@@ -1,4 +1,4 @@
-package com.sample.concurrent.MultiTreadBenchMark;
+package com.sample.concurrent;
 
 class ThreadDemo {
 	public static void main(String[] args) {

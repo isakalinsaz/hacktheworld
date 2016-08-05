@@ -1,4 +1,4 @@
-package com.sample.concurrent.MultiTreadBenchMark;
+package com.sample.concurrent;
 
 import java.util.Date;
 import java.util.HashMap;
