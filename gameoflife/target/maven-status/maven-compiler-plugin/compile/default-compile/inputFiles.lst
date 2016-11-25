@@ -1,2 +1,11 @@
-C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\sample\Cell.java
-C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\sample\App.java
+C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\model\EmptyCell.java
+C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\model\Board.java
+C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\model\LiveCell.java
+C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\model\Position.java
+C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\main\GameOfLifeStarter.java
+C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\model\Cell.java
+C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\service\BoardKillerService.java
+C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\service\impl\BoardKillerServiceImpl.java
+C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\service\BoardGeneratorService.java
+C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\model\Dimension.java
+C:\Users\merku\git\hacktheworld\gameoflife\src\main\java\com\edu\service\impl\BoardGeneratorServiceImpl.java

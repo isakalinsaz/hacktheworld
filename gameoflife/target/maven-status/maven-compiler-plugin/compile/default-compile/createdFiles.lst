@@ -1,2 +1,11 @@
-com\edu\sample\App.class
-com\edu\sample\Cell.class
+com\edu\main\GameOfLifeStarter.class
+com\edu\service\BoardGeneratorService.class
+com\edu\model\EmptyCell.class
+com\edu\service\BoardKillerService.class
+com\edu\model\Cell.class
+com\edu\service\impl\BoardKillerServiceImpl.class
+com\edu\service\impl\BoardGeneratorServiceImpl.class
+com\edu\model\Dimension.class
+com\edu\model\LiveCell.class
+com\edu\model\Board.class
+com\edu\model\Position.class

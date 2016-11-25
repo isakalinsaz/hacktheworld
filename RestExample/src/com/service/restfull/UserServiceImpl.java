@@ -1,7 +1,18 @@
 package com.service.restfull;
 
-/**
- * Created by merku on 30/08/2016.
- */
-public class UserServiceImpl {
+
+import com.service.config.SpringConfig;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+    @Autowired
+    SpringConfig springConfig;
+
+    @Override
+    public String sayMyName() {
+        return "Hello World " + springConfig.getUsername();
+    }
 }

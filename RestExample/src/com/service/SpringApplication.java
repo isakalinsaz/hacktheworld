@@ -1,7 +1,13 @@
 package com.service;
 
-/**
- * Created by merku on 30/08/2016.
- */
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@EnableAutoConfiguration
+@SpringBootApplication(scanBasePackages = {"com.service"})
 public class SpringApplication {
+
+    public static void main(String[] args) {
+        org.springframework.boot.SpringApplication.run(SpringApplication.class,args);
+    }
 }

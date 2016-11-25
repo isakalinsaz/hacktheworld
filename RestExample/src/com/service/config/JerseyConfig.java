@@ -1,7 +1,14 @@
 package com.service.config;
 
-/**
- * Created by merku on 30/08/2016.
- */
-public class JerseyConfig {
+import com.sun.jersey.api.client.filter.LoggingFilter;
+import com.sun.jersey.api.core.ResourceConfig;
+import org.springframework.web.filter.RequestContextFilter;
+
+public class JerseyConfig extends ResourceConfig{
+
+    public JerseyConfig() {
+        register(RequestContextFilter.class);
+        packages("com.geowarin.rest");
+        register(LoggingFilter.class);
+    }
 }

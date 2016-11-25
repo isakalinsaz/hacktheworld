@@ -1,7 +1,16 @@
 package com.service.model;
 
-/**
- * Created by merku on 30/08/2016.
- */
+import lombok.Data;
+
+@Data
 public class Greeting {
+
+    private final long id;
+    private final String content;
+
+    public Greeting(long id, String content) {
+        this.id = id;
+        this.content = content;
+    }
+
 }
