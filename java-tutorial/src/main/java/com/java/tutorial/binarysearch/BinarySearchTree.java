@@ -59,8 +59,7 @@ public class BinarySearchTree<Key extends Comparable<Key>, Value> {
             return get(root.left, key);
         else
             return get(root.right, key);
-        else
-        return root.val;
+
     }
 
 
